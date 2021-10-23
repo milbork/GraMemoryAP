@@ -22,8 +22,8 @@
             ShowTime = 5;
             Size = 150;
             Score = 0;
-            Rows = 4;
-            Columns = 6;
+            Rows = 6;
+            Columns = 4;
         }
     }
 }

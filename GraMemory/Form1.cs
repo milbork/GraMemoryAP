@@ -23,6 +23,10 @@ namespace GraMemory
 
             Height = panelKart.Height + 100;
             Width = panelKart.Width + 30;
+
+            labelStart.Text = "Gra rozpocznie sie za " + settings.ShowTime;
+            labelCzas.Text = settings.GameTime.ToString();
+            labelPunkty.Text = settings.Score.ToString();
         }
     }
 }

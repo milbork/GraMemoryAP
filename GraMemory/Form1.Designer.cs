@@ -40,7 +40,7 @@ namespace GraMemory
             // panelKart
             // 
             this.panelKart.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panelKart.Location = new System.Drawing.Point(12, 56);
+            this.panelKart.Location = new System.Drawing.Point(7, 56);
             this.panelKart.Name = "panelKart";
             this.panelKart.Size = new System.Drawing.Size(587, 74);
             this.panelKart.TabIndex = 0;
