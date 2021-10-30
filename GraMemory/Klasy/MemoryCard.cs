@@ -14,15 +14,27 @@ namespace GraMemory.Klasy
         public Image Back;
         public Image Front;
 
-        public MemoryCard(Guid iD, Image back, Image front)
+        public MemoryCard(Guid iD, string back, string front)
         {
             ID = iD;
-            Back = back;
-            Front = front;
+            Back = Image.FromFile(back);
+            Front = Image.FromFile(front);
 
             BackgroundImageLayout = ImageLayout.Stretch;
         }
 
-        //TODO: Metody zakrywania i odkrywania kart
+        //Metody zakrywania i odkrywania kart
+        public void HideCard()
+        {
+            BackgroundImage = Back;
+            Enabled = true;
+        }
+
+        public void ShowCard()
+        {
+            BackgroundImage = Front;
+            Enabled = false;
+        }
+
     }
 }

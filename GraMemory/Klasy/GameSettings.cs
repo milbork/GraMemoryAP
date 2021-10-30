@@ -1,4 +1,6 @@
-﻿namespace GraMemory.Klasy
+﻿using System;
+
+namespace GraMemory.Klasy
 {
     class GameSettings
     {
@@ -9,6 +11,9 @@
         public int Score;
         public int Rows;
         public int Columns;
+
+        public string BackPic = AppDomain.CurrentDomain.BaseDirectory + @"\grafiki\obrazki\logo.jpg";
+        public string FrontPicFolder = AppDomain.CurrentDomain.BaseDirectory + @"\grafiki\obrazki\memory";
 
         public GameSettings()
         {
