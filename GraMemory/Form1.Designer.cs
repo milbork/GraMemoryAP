@@ -29,12 +29,16 @@ namespace GraMemory
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panelKart = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.labelCzas = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.labelPunkty = new System.Windows.Forms.Label();
             this.labelStart = new System.Windows.Forms.Label();
+            this.timerGame = new System.Windows.Forms.Timer(this.components);
+            this.timerShow = new System.Windows.Forms.Timer(this.components);
+            this.timerStart = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // panelKart
@@ -100,6 +104,18 @@ namespace GraMemory
             this.labelStart.TabIndex = 5;
             this.labelStart.Text = "Gra rozpocznie sie za 5";
             // 
+            // timerGame
+            // 
+            this.timerGame.Interval = 1000;
+            // 
+            // timerShow
+            // 
+            this.timerShow.Interval = 1000;
+            // 
+            // timerStart
+            // 
+            this.timerStart.Interval = 1000;
+            // 
             // FormMemory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -127,6 +143,9 @@ namespace GraMemory
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label labelPunkty;
         private System.Windows.Forms.Label labelStart;
+        private System.Windows.Forms.Timer timerGame;
+        private System.Windows.Forms.Timer timerShow;
+        private System.Windows.Forms.Timer timerStart;
     }
 }
 
